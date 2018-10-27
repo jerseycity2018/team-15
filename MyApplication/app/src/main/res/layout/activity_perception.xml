@@ -13,11 +13,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="50dp"
-        android:text="How safe do you rate the park?"
+        android:text="How safe do you rate our park?"
         android:textAppearance="@style/TextAppearance.AppCompat"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="How safe do you rate the park?" />
+        tools:text="How safe do you rate our park?" />
 
     <Spinner
         android:id="@+id/sSafety"
@@ -50,11 +50,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="24dp"
-        android:text="How well the park is maintained?"
+        android:text="How well our park is  maintained?"
         android:textAppearance="@style/TextAppearance.AppCompat"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sSafety"
-        tools:text="How well the park is maintained?" />
+        tools:text="How well our park is  maintained?" />
 
     <TextView
         android:id="@+id/tvVal"
@@ -89,11 +89,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="20dp"
-        android:text="What can the park improve?"
+        android:text="What can we improve?"
         android:textAppearance="@style/TextAppearance.AppCompat"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText2"
-        tools:text="What can the park improve?" />
+        tools:text="What can we improve?" />
 
     <EditText
         android:id="@+id/editText4"
