@@ -57,7 +57,7 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(this,"Sign in failed", Toast.LENGTH_SHORT).show();
         }
         else {
-            Intent regIntent = new Intent(LoginActivity.this, LoginActivity.class);
+            Intent regIntent = new Intent(LoginActivity.this, OptionActivity.class);
             LoginActivity.this.startActivity(regIntent);
         }
     }
