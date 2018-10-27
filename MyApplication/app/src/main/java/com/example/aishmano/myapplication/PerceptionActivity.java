@@ -24,7 +24,7 @@ public class PerceptionActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent finIntent = new Intent
-                        (PerceptionActivity.this, MapsActivity.class);
+                        (PerceptionActivity.this, OptionActivity.class);
                 PerceptionActivity.this.startActivity(finIntent);
             }
         });

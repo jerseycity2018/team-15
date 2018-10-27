@@ -37,7 +37,7 @@ public class Demongraphics extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent finIntent = new Intent
-                        (Demongraphics.this, MapsActivity.class);
+                        (Demongraphics.this, OptionActivity.class);
                 Demongraphics.this.startActivity(finIntent);
             }
         });

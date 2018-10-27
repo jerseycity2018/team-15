@@ -46,12 +46,12 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="Donation with Paypal"
+        android:text="Paypal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:text="Donation with Paypal" />
+        tools:text="Paypal" />
 
     <TextView
         android:id="@+id/tvQuestionaires"
@@ -73,11 +73,11 @@
         android:layout_marginStart="12dp"
         android:layout_marginLeft="12dp"
         android:layout_marginTop="30dp"
-        android:text="Central Park is run and fund(80%) by the conservancy. Please help us sustain the park by donation"
+        android:text="Central Park is run and fund(80%) by the conservancy. Please help us sustain the park by kind donation"
         android:textAppearance="@style/TextAppearance.AppCompat"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bQuestionaires"
-        tools:text="Central Park is run and fund(80%) by the conservancy. Please help us sustain the park by donation" />
+        tools:text="Central Park is run and fund(80%) by the conservancy. Please help us sustain the park by kind donation" />
 
     <Button
         android:id="@+id/bDonation1"
