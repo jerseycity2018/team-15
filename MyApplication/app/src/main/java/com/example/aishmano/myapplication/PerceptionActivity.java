@@ -7,10 +7,15 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import static com.example.aishmano.myapplication.Insert.pushInfo;
+
 
 public class PerceptionActivity extends AppCompatActivity {
     private Button bFinish;
     private Spinner sSafety, sMaintain;
+    public static final String[] MAINTAIN =
+            {"","Very well maintained","Moderately maintained","Poorly maintained"};
+    public static final String[] SAFETY = {"","Very Safe","Moderately Safe","Not safe at all"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,19 +36,29 @@ public class PerceptionActivity extends AppCompatActivity {
 
         setMaintain();
         setSafety();
+
+        //push maintain to database
+        for(int i = 0; i < MAINTAIN.length; i++) {
+            pushInfo(MAINTAIN[i], "file name");
+        }
+
+        //push safety to database
+        for(int i = 0; i < SAFETY.length; i++) {
+            pushInfo(SAFETY[i], "file name");
+        }
+
+
     }
 
     public void setMaintain() {
-        String[] maintain = {"","Very well maintained","Moderately maintained","Poorly maintained"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>
-                (this, android.R.layout.simple_spinner_dropdown_item, maintain);
+                (this, android.R.layout.simple_spinner_dropdown_item, MAINTAIN);
         sMaintain.setAdapter(adapter);
     }
 
     public void setSafety() {
-        String[] safety = {"","Very Safe","Moderately Safe","Not safe at all"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>
-                (this, android.R.layout.simple_spinner_dropdown_item, safety);
+                (this, android.R.layout.simple_spinner_dropdown_item, SAFETY);
         sSafety.setAdapter(adapter);
     }
 }

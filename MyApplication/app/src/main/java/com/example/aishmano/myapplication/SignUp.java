@@ -3,11 +3,13 @@ package com.example.aishmano.myapplication;
 import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
+import static com.example.aishmano.myapplication.Insert.pushInfo;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class SignUp extends AppCompatActivity {
     private  EditText etName, etEmail, etCreatePass, etConfirmPass;
@@ -30,10 +32,20 @@ public class SignUp extends AppCompatActivity {
         bSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                init();
                 Intent regIntent = new Intent(SignUp.this, Demongraphics.class);
                 SignUp.this.startActivity(regIntent);
             }
         });
+
+        //put user info to database
+        pushInfo(name + ":" + confirmPass + ":" + email, "file name");
+    }
+    // initialize string value
+    public void init() {
+        name = etName.getText().toString().trim();email = etEmail.getText().toString().trim();
+        createPass = etCreatePass.getText().toString().trim();
+        confirmPass = etConfirmPass.getText().toString().trim();
     }
 
     /* Authentication disable for presentation purpose
