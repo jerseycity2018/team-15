@@ -10,6 +10,11 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
@@ -32,5 +37,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker(new MarkerOptions().position(centralPark).title("Marker in Central Park"));
         float zoom = 15.0f;
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(centralPark, zoom));
+        List<LatLng> list = null;
+
+    }
+
+    private ArrayList<LatLng> readItems(int resources) {
+        final ArrayList<LatLng> temp = new ArrayList<LatLng>();
+        InputStream inputStream = getResources().openRawResource(R.raw.test);
+        String json = new Scanner(inputStream).useDelimiter("\\A").next();
+        return null;
     }
 }
