@@ -27,15 +27,6 @@ public class SignUp extends AppCompatActivity {
     etConfirmPass = (EditText) findViewById(R.id.etConfirmPass);
     bSignUp = (Button) findViewById(R.id.bSignUp);
 
-    /* Link to the QuestionsActivity Page
-        bAddClasses.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            Intent addClassIntent = new Intent(RegisterActivity.this, QuestionsActivity.class);
-            RegisterActivity.this.startActivity(addClassIntent);
-        }
-    });
-*/
     // call register()
         bSignUp.setOnClickListener(new View.OnClickListener() {
         @Override
