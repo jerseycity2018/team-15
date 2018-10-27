@@ -13,6 +13,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
@@ -43,6 +44,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private ArrayList<LatLng> readItems(int resources) {
         final ArrayList<LatLng> temp = new ArrayList<LatLng>();
         InputStream inputStream = getResources().openRawResource(R.raw.test);
+        String json = new Scanner(inputStream).useDelimiter("\\A").next();
         return null;
     }
 }
