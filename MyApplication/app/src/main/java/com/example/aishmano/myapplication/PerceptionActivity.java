@@ -37,16 +37,18 @@ public class PerceptionActivity extends AppCompatActivity {
         setMaintain();
         setSafety();
 
+        /*
         //push maintain to database
         for(int i = 0; i < MAINTAIN.length; i++) {
             pushInfo(MAINTAIN[i], "file name");
         }
 
+
         //push safety to database
         for(int i = 0; i < SAFETY.length; i++) {
             pushInfo(SAFETY[i], "file name");
         }
-
+    */
 
     }
 

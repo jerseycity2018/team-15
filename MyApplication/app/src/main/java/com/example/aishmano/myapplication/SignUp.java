@@ -39,7 +39,7 @@ public class SignUp extends AppCompatActivity {
         });
 
         //put user info to database
-        pushInfo(name + ":" + confirmPass + ":" + email, "file name");
+       // pushInfo(name + ":" + confirmPass + ":" + email, "file name");
     }
     // initialize string value
     public void init() {

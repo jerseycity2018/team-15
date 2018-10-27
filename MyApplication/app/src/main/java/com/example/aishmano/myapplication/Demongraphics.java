@@ -99,7 +99,7 @@ public class Demongraphics extends AppCompatActivity {
         setActivities();
         setGender();
 
-        //push contries to database
+        /*push contries to database
         for(int i = 0; i < CONTRIES.length; i++) {
             pushInfo(CONTRIES[i], "file name");
         }
@@ -113,6 +113,7 @@ public class Demongraphics extends AppCompatActivity {
         for(int i = 0; i < ACTIVITIES.length; i++) {
             pushInfo(ACTIVITIES[i], "file name");
         }
+        */
     }
 
     // set countries
