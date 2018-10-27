@@ -30,8 +30,8 @@
             android:value="AIzaSyC2x_ivDxNtNq3vtD5qOyBpP7xvj21WCpU" />
 
         <activity
-            android:name=".LoginActivity"
-            android:label="LogIn">
+            android:name=".MainActivity"
+            android:label="Main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -48,7 +48,7 @@
         <activity android:name=".Demongraphics" />
         <activity android:name=".OptionActivity" />
         <activity android:name=".PerceptionActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".LoginActivity"></activity>
     </application>
 
 </manifest>
