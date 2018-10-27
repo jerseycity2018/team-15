@@ -31,7 +31,7 @@
 
         <activity
             android:name=".MainActivity"
-            android:label="Main">
+            android:label="The Guide">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
