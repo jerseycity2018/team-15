@@ -42,7 +42,7 @@ public class OptionActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent quesIntent = new Intent
-                        (OptionActivity.this, OptionActivity.class);
+                        (OptionActivity.this, PerceptionActivity.class);
                 OptionActivity.this.startActivity(quesIntent);
             }
         });

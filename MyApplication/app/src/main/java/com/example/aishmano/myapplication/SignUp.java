@@ -30,11 +30,13 @@ public class SignUp extends AppCompatActivity {
         bSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                register();
-
+                Intent regIntent = new Intent(SignUp.this, Demongraphics.class);
+                SignUp.this.startActivity(regIntent);
             }
         });
     }
+
+    /* Authentication disable for presentation purpose
     // Register account
     public void register() {
         init();
@@ -70,6 +72,6 @@ public class SignUp extends AppCompatActivity {
         }
         return valid;
     }
-
+*/
 }
 

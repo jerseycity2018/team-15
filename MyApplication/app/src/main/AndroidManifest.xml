@@ -30,8 +30,8 @@
             android:value="AIzaSyC2x_ivDxNtNq3vtD5qOyBpP7xvj21WCpU" />
 
         <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps">
+            android:name=".LoginActivity"
+            android:label="LogIn">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -44,9 +44,10 @@
             android:required="false" />
 
         <activity android:name=".SignUp" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".MapsActivity" />
         <activity android:name=".Demongraphics" />
-        <activity android:name=".OptionActivity"></activity>
+        <activity android:name=".OptionActivity" />
+        <activity android:name=".PerceptionActivity"></activity>
     </application>
 
 </manifest>

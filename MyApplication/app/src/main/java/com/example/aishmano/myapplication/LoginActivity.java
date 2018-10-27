@@ -31,12 +31,11 @@ public class LoginActivity extends AppCompatActivity {
         etPassword = (EditText) findViewById(R.id.etPassword);
         bSignIn = (Button) findViewById(R.id.bSignIn);
 
-        // call signIn()
         bSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                signIn();
-
+                Intent regIntent = new Intent(LoginActivity.this, OptionActivity.class);
+                LoginActivity.this.startActivity(regIntent);
             }
         });
 
@@ -50,6 +49,7 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
+    /*Authentication disable for presentation purpose
     // Register account
     public void signIn() {
         init();
@@ -81,7 +81,7 @@ public class LoginActivity extends AppCompatActivity {
 
         return valid;
     }
-
+*/
 }
 
 

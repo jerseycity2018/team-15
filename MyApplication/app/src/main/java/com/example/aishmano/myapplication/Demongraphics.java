@@ -1,8 +1,11 @@
 package com.example.aishmano.myapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -12,6 +15,7 @@ public class Demongraphics extends AppCompatActivity {
     private EditText etDOB;
     private String dob;
     private Spinner sResidency, sIncome, sGender;
+    private Button bFin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +28,19 @@ public class Demongraphics extends AppCompatActivity {
         tvIncome = (TextView) findViewById(R.id.tvIncome);
         etDOB = (EditText) findViewById(R.id.etDOB);
         sResidency = (Spinner) findViewById(R.id.sResidency);
-        sGender = (Spinner) findViewById(R.id.sGender);
+        sGender = (Spinner) findViewById(R.id.sFreq);
         sIncome = (Spinner) findViewById(R.id.sIncome);
+        bFin = (Button) findViewById(R.id.bFin);
 
+        //redirect button to map
+        bFin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent finIntent = new Intent
+                        (Demongraphics.this, MapsActivity.class);
+                Demongraphics.this.startActivity(finIntent);
+            }
+        });
         countries();
         setIncome();
         setGender();
