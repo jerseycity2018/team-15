@@ -7,18 +7,6 @@
     tools:context=".Demongraphics">
 
     <Spinner
-        android:id="@+id/sIncome"
-        android:layout_width="374dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="16dp"
-        android:background="@android:drawable/btn_dropdown"
-        android:spinnerMode="dropdown"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvIncome" />
-
-    <Spinner
         android:id="@+id/sResidency"
         android:layout_width="369dp"
         android:layout_height="48dp"
@@ -29,6 +17,18 @@
         android:spinnerMode="dropdown"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvResidency" />
+
+    <Spinner
+        android:id="@+id/sAct"
+        android:layout_width="369dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAct" />
 
     <TextView
         android:id="@+id/tvAge"
@@ -93,19 +93,6 @@
         app:layout_constraintTop_toBottomOf="@+id/etDOB"
         tools:text="Gender" />
 
-    <TextView
-        android:id="@+id/tvIncome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Income"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sResidency"
-        tools:text="Income" />
-
     <CheckBox
         android:id="@+id/cbNA"
         android:layout_width="wrap_content"
@@ -117,8 +104,9 @@
         android:layout_marginRight="8dp"
         android:text="I don't want to provide answers for these questions"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sIncome" />
+        app:layout_constraintTop_toBottomOf="@+id/sAct" />
 
     <Button
         android:id="@+id/bFin"
@@ -137,5 +125,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cbNA"
         tools:text="Finish" />
+
+    <TextView
+        android:id="@+id/tvAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Activities"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sResidency" />
 
 </android.support.constraint.ConstraintLayout>

@@ -11,10 +11,10 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 public class Demongraphics extends AppCompatActivity {
-    private TextView tvAge, tvResidency, tvGender, tvIncome;
+    private TextView tvAge, tvResidency, tvGender, tvAct;
     private EditText etDOB;
     private String dob;
-    private Spinner sResidency, sIncome, sGender;
+    private Spinner sResidency, sAct, sGender;
     private Button bFin;
 
     @Override
@@ -25,11 +25,11 @@ public class Demongraphics extends AppCompatActivity {
         tvAge = (TextView) findViewById(R.id.tvAge);
         tvResidency = (TextView) findViewById(R.id.tvResidency);
         tvGender = (TextView) findViewById(R.id.tvGender);
-        tvIncome = (TextView) findViewById(R.id.tvIncome);
+        tvAct = (TextView) findViewById(R.id.tvAct);
         etDOB = (EditText) findViewById(R.id.etDOB);
         sResidency = (Spinner) findViewById(R.id.sResidency);
         sGender = (Spinner) findViewById(R.id.sFreq);
-        sIncome = (Spinner) findViewById(R.id.sIncome);
+        sAct = (Spinner) findViewById(R.id.sAct);
         bFin = (Button) findViewById(R.id.bFin);
 
         //redirect button to map
@@ -42,7 +42,7 @@ public class Demongraphics extends AppCompatActivity {
             }
         });
         countries();
-        setIncome();
+        setActivities();
         setGender();
     }
 
@@ -110,11 +110,11 @@ public class Demongraphics extends AppCompatActivity {
     }
 
     //set incomes
-    public void setIncome() {
-        String[] income =  {"","Below 69000","69000 - 73000","Above 73000"};
+    public void setActivities() {
+        String[] activities =  {"","Below 69000","69000 - 73000","Above 73000"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>
-                (this, android.R.layout.simple_spinner_dropdown_item, income);
-        sIncome.setAdapter(adapter);
+                (this, android.R.layout.simple_spinner_dropdown_item, activities);
+        sAct.setAdapter(adapter);
     }
 
     //set genders

@@ -47,7 +47,8 @@
         <activity android:name=".MapsActivity" />
         <activity android:name=".Demongraphics" />
         <activity android:name=".OptionActivity" />
-        <activity android:name=".PerceptionActivity"></activity>
+        <activity android:name=".PerceptionActivity" />
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
