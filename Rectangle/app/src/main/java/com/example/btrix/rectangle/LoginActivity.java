@@ -7,6 +7,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -15,20 +16,22 @@ import android.widget.Toast;
  */
 public class LoginActivity extends AppCompatActivity {
 
+    private TextView register;
     private EditText etEmail, etPassword;
     private String email, password;
     private Button bSignIn;
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        register = (TextView) findViewById(R.id.register);
         etEmail = (EditText) findViewById(R.id.etEmail);
         etPassword = (EditText) findViewById(R.id.etPassword);
         bSignIn = (Button) findViewById(R.id.bSignIn);
 
-        // call register()
+        // call signIn()
         bSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,7 +40,16 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        // link to sign up
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent regIntent = new Intent(LoginActivity.this, SignUp.class);
+                LoginActivity.this.startActivity(regIntent);
+            }
+        });
     }
+
     // Register account
     public void signIn() {
         init();
