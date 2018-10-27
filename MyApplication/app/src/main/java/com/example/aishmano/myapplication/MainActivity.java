@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 try {
                     super.run();
-                    sleep(2000);  //Delay of 2 seconds
+                    sleep(10000);  //Delay of 10 seconds
                 } catch (Exception e) {
 
                 } finally {
