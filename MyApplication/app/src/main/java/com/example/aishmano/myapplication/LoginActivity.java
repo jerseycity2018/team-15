@@ -1,4 +1,4 @@
-package com.example.btrix.rectangle;
+package com.example.aishmano.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;

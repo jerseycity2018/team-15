@@ -1,4 +1,4 @@
-package com.example.btrix.rectangle;
+package com.example.aishmano.myapplication;
 
 import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
@@ -20,21 +20,21 @@ public class SignUp extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up);
 
 
-    etName = (EditText) findViewById(R.id.etName);
-    etEmail = (EditText) findViewById(R.id.etEmail);
-    etCreatePass = (EditText) findViewById(R.id.etCreatePass);
-    etConfirmPass = (EditText) findViewById(R.id.etConfirmPass);
-    bSignUp = (Button) findViewById(R.id.bSignUp);
+        etName = (EditText) findViewById(R.id.etName);
+        etEmail = (EditText) findViewById(R.id.etEmail);
+        etCreatePass = (EditText) findViewById(R.id.etCreatePass);
+        etConfirmPass = (EditText) findViewById(R.id.etConfirmPass);
+        bSignUp = (Button) findViewById(R.id.bSignUp);
 
-    // call register()
+        // call register()
         bSignUp.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            register();
+            @Override
+            public void onClick(View view) {
+                register();
 
-        }
-    });
-}
+            }
+        });
+    }
     // Register account
     public void register() {
         init();
