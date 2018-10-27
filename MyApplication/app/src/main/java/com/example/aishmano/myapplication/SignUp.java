@@ -42,7 +42,7 @@ public class SignUp extends AppCompatActivity {
             Toast.makeText(this,"Signup failed", Toast.LENGTH_SHORT).show();
         }
         else {
-            Intent regIntent = new Intent(SignUp.this, SignUp.class);
+            Intent regIntent = new Intent(SignUp.this, Demongraphics.class);
             SignUp.this.startActivity(regIntent);
         }
     }
