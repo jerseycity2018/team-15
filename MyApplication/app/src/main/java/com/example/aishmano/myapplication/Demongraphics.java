@@ -111,7 +111,7 @@ public class Demongraphics extends AppCompatActivity {
 
     //set incomes
     public void setActivities() {
-        String[] activities =  {"","Below 69000","69000 - 73000","Above 73000"};
+        String[] activities =  {"","Sport","Hangout with friends","Events","Walk my dog", "Just for pleasure"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>
                 (this, android.R.layout.simple_spinner_dropdown_item, activities);
         sAct.setAdapter(adapter);
